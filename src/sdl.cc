@@ -9,6 +9,7 @@ void Initialize() {
   SDL_Init(SDL_INIT_VIDEO);
   SDL_CreateWindowAndRenderer(kWindowWidth, kWindowHeight, 0, &window,
                               &renderer);
+  SDL_SetWindowResizable(window, static_cast<SDL_bool>(true));
 }
 
 void ClearScreen(Vec4<uint8_t> color) {

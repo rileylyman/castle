@@ -17,3 +17,5 @@ sources = [
 executable('castle', sources,
   dependencies : [sdl_dep, glm_dep]
   )
+
+run_command('cp', [meson.current_build_dir() / 'compile_commands.json', meson.current_source_dir()])
